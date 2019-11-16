@@ -2,6 +2,7 @@ const net = require('net');
 
 let HOST='0.0.0.0';
 let PORT = 40000;
+
 let client = new net.Socket();
 let buf = new Buffer.alloc(4);
 let timerId = null;
