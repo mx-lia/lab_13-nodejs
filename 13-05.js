@@ -23,11 +23,11 @@ let server = net.createServer((sock)=>{
     }, 5000);
 
     sock.on('close', ()=>{
-        console.log('Server CLOSED: '+ sock.remoteAddress+' '+sock.remotePort);
+        console.log('Server CLOSED');
         clearInterval(timerId);
     });
     sock.on('error', ()=>{
-        console.log('Server ERROR: '+ sock.remoteAddress+' '+sock.remotePort);
+        console.log('Server ERROR');
     });
 });
 
